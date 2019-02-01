@@ -21,7 +21,7 @@ body {
     height: 100px;
     width: 100px;
     border-radius: 80%;
-    font-family: "American Typewriter";
+    font-family: "Verdana";
     background-color: #8a2629
 }
 
@@ -33,12 +33,21 @@ body {
     text-decoration: none;
 }
 
-.menuItem :hover:not(.active)  {
+.menuItem.a.active-tab{
+    background-color: #8a8826;
+    justify-content: center;
+    align-items: center;
+    color: #FAFAF9;
+    padding: 30px 20px;
+    text-decoration: none;
+}
+
+.menuItem a:hover{
     background-color: #555;
     margin: 8px;
     height: 100px;
     width: 100px;
-    border-radius: 50%;
+    border-radius: 90%;
     color: white;
 }
 
@@ -49,17 +58,15 @@ body {
 
 .header{
     margin: 10px;
-    /*#838A93*/
     background-color: #8a8826;
     font-size: 15pt;
-    font-family: "American Typewriter";
+    font-family: "Verdana";
     border-radius: 5px 20px 5px;
 }
 
 .pageImage{
     display: flex;
     justify-content: center;
-    border: 1px solid #4C3C1B;
     padding: 8px 80px 8px 8px;
 }
 
@@ -75,30 +82,23 @@ h1, h2{
     margin: 2px;
     color: #FAFAF9;
     text-align: center;
+    font-family: Verdana;
 }
 
 p {
     text-align: justify;
     color: #FAFAF9;
     font-size: 15pt;
-    font-family: "American Typewriter";
-}
-
-
-.separator{
-    margin: 10px;
-    background-color: #838A93;
-    font-size: 15pt;
-    font-family: "American Typewriter";
-    border-radius: 5px 20px 5px;
+    font-family: Palatino;
 }
 
 .row{
-    margin: 25px;
+    margin: 10px;
+    border: #314d1b;
 }
 .column {
     float: left;
-    padding: 10px;
+    padding: 50px;
 }
 
 
@@ -118,19 +118,21 @@ p {
 
 table {
     border-collapse: collapse;
-    width: 70%;
-    margin: 0px auto;
-    padding: 5rem;
+    width: 90%;
+    margin: 100px auto;
 }
 
 th, td {
     padding: 2rem;
     font-size: 20pt;
+    text-align: center;
+    font-family: Palatino;
 }
 
 tr {
-    background: #598061;
-    border-spacing:5em;
+    background: #aee8bf;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 tr:first-child {
@@ -139,10 +141,42 @@ tr:first-child {
 }
 
 tr:nth-child(even) {
-    background: #598894;
+    background: #965c70;
 }
 
+#education-pic-div {
+    display: flex;
+    justify-content: center;
+}
 
+.img-icon {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
 
+div.gallery {
+    margin: 10px;
+    border: 5px solid #ccc;
+    width: 300px;
+    height: 300px;
+    float: left;
+}
 
+div.gallery:hover {
+    border: 5px solid #777;
+}
 
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Palatino;
+}
