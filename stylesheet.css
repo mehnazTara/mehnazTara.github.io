@@ -1,0 +1,148 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(to right, #EFEFBB , #D4D3DD);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 5px;
+    padding: 0;
+}
+.menuItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8px;
+    height: 100px;
+    width: 100px;
+    border-radius: 80%;
+    font-family: "American Typewriter";
+    background-color: #8a2629
+}
+
+.menuItem a{
+    justify-content: center;
+    align-items: center;
+    color: #FAFAF9;
+    padding: 30px 20px;
+    text-decoration: none;
+}
+
+.menuItem :hover:not(.active)  {
+    background-color: #555;
+    margin: 8px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: white;
+}
+
+.menuItem a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.header{
+    margin: 10px;
+    /*#838A93*/
+    background-color: #8a8826;
+    font-size: 15pt;
+    font-family: "American Typewriter";
+    border-radius: 5px 20px 5px;
+}
+
+.pageImage{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #4C3C1B;
+    padding: 8px 80px 8px 8px;
+}
+
+.pageDescription{
+    margin: 10px;
+    float: bottom;
+    background-color: #986C68;
+    font-size: 15pt;
+    font-family: "Comic Sans MS";
+}
+
+h1, h2{
+    margin: 2px;
+    color: #FAFAF9;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    color: #FAFAF9;
+    font-size: 15pt;
+    font-family: "American Typewriter";
+}
+
+
+.separator{
+    margin: 10px;
+    background-color: #838A93;
+    font-size: 15pt;
+    font-family: "American Typewriter";
+    border-radius: 5px 20px 5px;
+}
+
+.row{
+    margin: 25px;
+}
+.column {
+    float: left;
+    padding: 10px;
+}
+
+
+.column.side {
+    width: 10%;
+}
+
+.column.middle {
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0px auto;
+    padding: 5rem;
+}
+
+th, td {
+    padding: 2rem;
+    font-size: 20pt;
+}
+
+tr {
+    background: #598061;
+    border-spacing:5em;
+}
+
+tr:first-child {
+    background: #314d1b;
+    color: #FAFAF9; ;
+}
+
+tr:nth-child(even) {
+    background: #598894;
+}
+
+
+
+
+
