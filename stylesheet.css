@@ -1,18 +1,21 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    background-image: linear-gradient(to right, #EFEFBB , #D4D3DD);
+    background-image: linear-gradient(to right, #EFEFBB, #D4D3DD);
 }
 
-.menu{
+/* nav bar for pages*/
+.menu {
     display: flex;
     justify-content: center;
     overflow: hidden;
     margin: 5px;
     padding: 0;
 }
-.menuItem{
+
+.menuItem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,11 +28,11 @@ body {
     background-color: #8a2629
 }
 
-.menuItem.active-tab{
+.menuItem.active-tab {
     background-color: black;
 }
 
-.menuItem a{
+.menuItem a {
     justify-content: center;
     align-items: center;
     color: #FAFAF9;
@@ -38,88 +41,103 @@ body {
 }
 
 .menuItem:hover:not(.active-tab) {
-    color: black;
-    background-color: #555;
+    background-color: #949291;
 }
 
-#mainHeader{
+/* page header */
+#mainHeader {
+    font-size: 16pt;
     border-radius: 5px 20px 5px;
 }
-.header{
+
+.header {
     background-color: #8a8826;
     font-size: 15pt;
     font-family: "Verdana";
+    margin: 2px;
 }
 
-.pageImage{
+.pageImage {
     display: flex;
     justify-content: center;
 }
 
-.pageDescription{
-    margin: 20px;
-    float: bottom;
+.pageDescription {
     background-color: #986C68;
-    font-size: 15pt;
-    font-family: "Palatino";
 }
 
-h1, h2{
+h1, h2 {
     margin: 2px;
     color: #FAFAF9;
     text-align: center;
     font-family: Verdana;
 }
 
-p not .row-description {
+p:not(.row-description) {
     text-align: justify;
     color: #FAFAF9;
     font-size: 15pt;
     font-family: Palatino;
+    margin: 0px;
+    padding: 20px;
 }
 
-.row{
-    margin: 10px;
-    border-bottom: 10px navy;
+/* coloum form for experience page */
+div.row {
+    border: 1px solid #986C68;
+    box-shadow: 0 12px 8px -8px #986C68;
+    margin: 20px;
+
 }
-.column {
+
+div.column {
     float: left;
     padding: 50px;
 }
 
 
-.column.side {
+div.column.side {
     width: 10%;
 }
 
-.column.middle {
+div.column.middle {
     width: 50%;
 }
 
-.row-header{
-    text-align: center;
-    font-size: 15pt;
+li {
+    text-align: justify;
+    margin: 10px;
+    font-size: 13pt;
+    font-weight: bolder;
+    font-family: Palatino;
+    color: black;
+
+}
+
+.row-description {
+    text-align: left;
+    margin: 10px;
+    font-size: 13pt;
+    font-weight: bolder;
+    font-family: Palatino;
+    color: black;
+}
+
+.row-header {
+    text-align: justify;
+    font-size: 16pt;
     font-weight: bolder;
     font-family: Verdana;
     color: black;
-    border: 2px #965c70;
 }
 
-.row-description li{
-    margin: 50px;
-    text-align: left;
-    font-size: 15pt;
-    font-weight: bold;
-    font-family: Palatino;
-}
-
-
-.row:after {
+div.row:after {
     content: "";
     display: block;
     clear: both;
 }
 
+/* table style for education page */
 table {
     border-collapse: collapse;
     width: 90%;
@@ -141,7 +159,7 @@ tr {
 
 tr:first-child {
     background: #314d1b;
-    color: #FAFAF9; ;
+    color: #FAFAF9;;
 }
 
 tr:nth-child(even) {
@@ -159,6 +177,8 @@ tr:nth-child(even) {
     max-width: 200px;
     max-height: 200px;
 }
+
+/* photo gallery styling */
 
 div.gallery {
     margin: 10px;
