@@ -25,6 +25,10 @@ body {
     background-color: #8a2629
 }
 
+.menuItem.active-tab{
+    background-color: black;
+}
+
 .menuItem a{
     justify-content: center;
     align-items: center;
@@ -33,27 +37,9 @@ body {
     text-decoration: none;
 }
 
-/*.menuItem.a.active-tab{*/
-    /*background-color: #8a8826;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*color: #FAFAF9;*/
-    /*padding: 30px 20px;*/
-    /*text-decoration: none;*/
-/*}*/
-
-.menuItem a:hover{
+.menuItem:hover:not(.active-tab) {
+    color: black;
     background-color: #555;
-    margin: 8px;
-    height: 100px;
-    width: 100px;
-    border-radius: 90%;
-    color: white;
-}
-
-.menuItem a.active {
-    background-color: #4CAF50;
-    color: white;
 }
 
 #mainHeader{
